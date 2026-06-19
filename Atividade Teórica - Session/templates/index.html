@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Sessions Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <h1>📚 Atividade sobre Sessions no Flask</h1>
+        <p>Desenvolvimento Web com Python e Flask</p>
+    </header>
+
+    <main class="container">
+
+        <details open>
+            <summary>Questão 1 - O que é uma Session?</summary>
+            <p>Uma Session no Flask permite armazenar informações específicas de cada usuário durante sua navegação no sistema.</p>
+        </details>
+
+        <details>
+            <summary>Questão 2 - Diferença entre variável e Session</summary>
+            <p>Variáveis comuns podem ser compartilhadas pela aplicação, enquanto Sessions armazenam dados individuais para cada usuário.</p>
+        </details>
+
+        <details>
+            <summary>Questão 3 - Secret Key</summary>
+            <p>A propriedade <code>app.secret_key</code> protege os dados da Session e impede alterações indevidas.</p>
+        </details>
+
+        <details>
+            <summary>Questão 4 - Análise do Código</summary>
+            <p>O valor "Pedro" é armazenado na chave "usuario" da Session.</p>
+        </details>
+
+        <details>
+            <summary>Questão 5 - Contador Global</summary>
+            <p>O contador global é compartilhado entre todos os usuários. Sessions permitem contadores individuais.</p>
+        </details>
+
+        <details>
+            <summary>Questão 6 - Armazenando Maria</summary>
+            <pre>session["nome"] = "Maria"</pre>
+        </details>
+
+        <details>
+            <summary>Questão 7 - Método get()</summary>
+            <p>Retorna o valor da chave se existir ou um valor padrão caso ela não exista.</p>
+        </details>
+
+        <details>
+            <summary>Questão 8 - pop() e clear()</summary>
+            <p>pop() remove uma chave específica. clear() remove toda a Session.</p>
+        </details>
+
+        <details>
+            <summary>Questão 9 - Login com Session</summary>
+            <p>Sessions podem registrar login, controlar acesso e encerrar autenticação no logout.</p>
+        </details>
+
+        <details>
+            <summary>Questão 10 - Contador de Visitas</summary>
+            <p>A cada acesso, o valor da chave contador é incrementado.</p>
+        </details>
+
+        <details>
+            <summary>Questão 11 - Informações Armazenáveis</summary>
+            <p>Nome, tema, idioma, contador de visitas e permissões.</p>
+        </details>
+
+        <details>
+            <summary>Questão 12 - Quando usar Session?</summary>
+            <p>Quando os dados forem temporários e relacionados apenas ao usuário atual.</p>
+        </details>
+
+        <details>
+            <summary>Questão 13 - Segurança</summary>
+            <p>Senhas não devem ser armazenadas diretamente em Sessions por motivos de segurança.</p>
+        </details>
+
+        <details>
+            <summary>Questão 14 - Página de Visitas</summary>
+            <p>Utiliza um contador na Session que aumenta a cada visita.</p>
+        </details>
+
+        <details>
+            <summary>Questão 15 - Login e Logout</summary>
+            <p>O login cria a chave "logado" e o logout a remove da Session.</p>
+        </details>
+
+    </main>
+
+</body>
+</html>
